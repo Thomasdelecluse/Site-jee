@@ -1,0 +1,443 @@
+body{
+    background-color: #353434;
+    height: 100vh;
+}
+.container{
+
+    height: 100%;
+
+    padding: 10vh;
+}
+label{
+    color: white;
+    font-family: revert;
+}
+
+.modal{
+    background-color: black;
+    height: 100%;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 22px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+a{
+    font-family: Impact;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/*.modal > *:first-child {*/
+/*    border-top-left-radius: 16px;*/
+/*    border-bottom-left-radius: 16px;*/
+/*}*/
+
+/*.modal > *:last-child {*/
+/*    border-top-right-radius: 16px;*/
+/*    border-bottom-right-radius: 16px;*/
+/*}*/
+.modal2{
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px;
+    height: 400px;
+}
+.itm1{
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    height: 210px;
+}
+.img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    border-radius: 15px;
+
+}
+.itm2 {
+    background-image: url(img/batman.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+h4{
+    color: white;
+    font-family: revert;
+    margin-left: 2.4em;
+}
+.item1{
+    background-color: #171717;
+
+}
+.item2 {
+    background-color: #0D0D0D;
+    position: relative;
+}
+.item3{
+    background-color: #171717;
+}
+.menu{
+    background-color: #171717;
+    width: 24vw;
+    height: 7vh;
+    border-radius: 60px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*
+hoover menu css
+ */
+@keyframes shake {
+    25% {
+        transform: rotate(calc(var(--angle) * -1));
+    }
+
+    50% {
+        transform: rotate(var(--angle));
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+body {
+    font: 100 1.3em sans-serif;
+}
+
+h1 {
+    position: relative;
+    font-size: 1.5em;
+    margin: 0.669em 0.2em;
+}
+p{
+    position: relative;
+    font-size: 0.9em;
+    margin: 0em 0.2em;
+}
+.display{
+    margin-top: 4em;
+    text-align: center;
+}
+
+.HOVER {
+    --width: 80%;
+    --time: 0.7s;
+    position: relative;
+    display: block;
+    margin: 3em 0 0 2em;
+    padding: 0.3em;
+    color: white;
+    background: #222;
+    overflow: hidden;
+}
+
+.HOVER text {
+    position: relative;
+    z-index: 5;
+
+    transition: color var(--time);
+}
+
+.HOVER:hover text {
+    color: #222;
+}
+
+.HOVER span {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 0;
+    width: 0;
+    height: 0;
+
+    border-radius: 100%;
+    background: #fff;
+
+    transform: translate(-50%, -50%);
+    transition: width var(--time), padding-top var(--time);
+}
+
+.HOVER:hover span {
+    width: calc(var(--width) * 2.25);
+    padding-top: calc(var(--width) * 2.25);
+}
+
+.HOVER.FLASH:hover text {
+    color: white;
+}
+
+.HOVER.FLASH span {
+    background: #ff3b3b;
+}
+
+.animated {
+    --angle: 5deg;
+    animation: shake 0.3s;
+}
+
+.link{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    font-size: 1rem;
+}
+/*
+shearch bar
+ */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    position: absolute;
+    right: 1rem;
+}
+.container1 {
+    /* width: -971px; */
+    position: relative;
+    top: -15px;
+    margin-left: 12px;
+}
+.container1 .search {
+    position: absolute;
+    margin: auto;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background: crimson;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+.container1 .search:hover {
+    cursor: pointer;
+}
+.container1 .search::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 9px;
+    right: 0;
+    bottom: 0;
+    left: 9px;
+    width: 7px;
+    height: 1.6px;
+    background: white;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+.container1 .search::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+.container1 input {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    margin: auto;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    text-shadow: 0 0 10px crimson;
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+.container1 input:hover {
+    cursor: pointer;
+}
+.container1 input:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+    font-size: 1rem;
+}
+.container1 input:focus ~ .search {
+    right: -300px;
+    background: #151515;
+    z-index: 6;
+}
+.container1 input:focus ~ .search::before {
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 2px;
+}
+.container1 input:focus ~ .search::after {
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 2px;
+    border: none;
+    background: white;
+    border-radius: 0%;
+    transform: rotate(-45deg);
+}
+.container1 input::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+}
+.itm1 h1{
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.10em
+}
+.itm1 p{
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.10em
+}
+/*Formulaire hero
+ */
+/*scroll bar
+ */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Media query*/
+@media (max-width: 500px) {
+    .menu{
+        background-color: #171717;
+        width: 30vw;
+        height: 7vh;
+        border-radius: 60px;
+        margin: 25px 58px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .item3 {
+        display: none;
+    }
+    .container {
+        height: 100%;
+        padding: 2vh;
+    }
+    .HOVER {
+        --width: 80%;
+        --time: 0.7s;
+        position: relative;
+        display: block;
+        width: 99px;
+        margin: 0 0 57px;
+        height: 32px;
+        color: white;
+        border-radius: 0!important;
+        overflow: hidden;
+    }
+    .modal {
+        grid-template-columns: 2fr 4fr;
+    }
+    .HOVER text {
+        position: relative;
+        z-index: 5;
+        transition: color var(--time);
+        line-height: 31px;
+    }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+    .item3 {
+        display: none;
+    }
+    .modal {
+        grid-template-columns: 2fr 4fr;
+    }
+    .menu {
+        background-color: #171717;
+        width: 42vw;
+        height: 7vh;
+        border-radius: 60px;
+        margin: 26px 87px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .modal2 {
+        overflow-y: scroll;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 60px;
+        height: 400px;
+    }
+    .container {
+        height: 100%;
+        padding: 2vh;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1380px) {
+    .modal2 {
+        overflow-y: scroll;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 60px;
+        height: 456px;
+    }
+    .container {
+        height: 100%;
+        padding: 2vh;
+    }
+}
